@@ -30,10 +30,13 @@ function getBeer(beerName, cb) {
         return request(options);
     })
     .then(function($) {
-      beerInfo.rating = $('.ba-ravg').text();
-      beerInfo.beerName = $('.titleBar h1').text();
-      let infoBox = $('#info_box');
-      getABV($, infoBox);
+      beerInfo.rating = parseFloat($('.ba-ravg').text());
+      let beerBreweryName = $('.titleBar h1').text();
+      beerInfo.beerName = getBeerName(beerBreweryName);
+      beerInfo.brewery = getBreweryName(beerBreweryName);
+      let infoBox = $('#info_box').html();
+      beerInfo.ABV = getABV($, infoBox);
+      beerInfo.style = getStyle($, infoBox);
       console.log(beerInfo);
     })
     .catch(function (err) {
@@ -45,20 +48,37 @@ function formatBeerName(beerName) {
   return beerName.replace(/ /g, '+');
 }
 
-function getABV($, infoBox) {
-  let abvLoc = 0;
-  infoBox.children().each(function(i, elem) {
-    if ($(this).text().includes('%')) {
-      console.log($(this).text());
-    }
-  });
+function getABV($, html) {
+  let index = html.indexOf('(ABV)');
+  let subStr = html.slice(index, index+20);
+  let matchArr = subStr.match(/[0-9]{1,2}.[0-9]+%/);
+  //TODO add error handling
+  return parseFloat(matchArr[0]);
+}
+
+function getStyle($, html) {
+  let index = html.indexOf('/beer/style/');
+  let subStr = html.slice(index, index+40);
+  let matchArr = subStr.match(/<b>[a-zA-Z ]+?(?=<\/b>)/);
+  //TODO add error handling
+  return matchArr[0].replace('<b>', '');
+}
+
+function getBeerName(str) {
+    let temp = str.split('|');
+    return temp[0].trim();
+}
+
+function getBreweryName(str) {
+    let temp = str.split('|');
+    return temp[1].trim();
 }
 
 function transformBeerInfo(beerPath) {
   let attrs = beerPath.split('/');
   return {
-    'breweryId': attrs[3],
-    'beerId': attrs[4]
+    'breweryId': parseInt(attrs[3]),
+    'beerId': parseInt(attrs[4])
   }
 }
 
