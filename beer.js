@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const request = require('request-promise');
 
-var baBase = "http://www.beeradvocate.com"
+var baBase = "http://www.beeradvocate.com";
 var searchPath = "/search/?q=<searchTerm>&qt=beer";
 
 
