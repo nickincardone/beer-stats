@@ -1,0 +1,2817 @@
+{
+    "products": [
+        {
+            "brandName": "Budweiser",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "24 cans / 12 fl oz",
+            "description": "Bud Light",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820053168",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820053168",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820053168",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820053168",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820053168",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820053168",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820053168",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820053168",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820053168",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820053168",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820053168",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820053168",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820053168",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820053168",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820053168",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820053168",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820053168",
+                    "perspective": "front",
+                    "size": "small"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820053168",
+            "slug": "bud-light",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820053168",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 1,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Corona",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 bottles / 12 fl oz",
+            "description": "Corona Extra Beer",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0008066095615",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0008066095615",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008066095615",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0008066095615",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0008066095615",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0008066095615",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008066095615",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008066095615",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0008066095615",
+                    "perspective": "front",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008066095615",
+                    "perspective": "front",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "corona-extra-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008066095615",
+            "slug": "corona-extra-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008066095615",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 2,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Budweiser",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "30 cans / 12 fl oz",
+            "description": "Bud Light",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820053030",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820053030",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820053030",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820053030",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820053030",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820053030",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820053030",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820053030",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820053030",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820053030",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820053030",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820053030",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820053030",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820053030",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820053030",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820053030",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820053030",
+                    "perspective": "back",
+                    "size": "small"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820053030",
+            "slug": "bud-light",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820053030",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 3,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Miller Brewing Co.",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "24 ct / 12 fl oz",
+            "description": "Miller Brewing Co. Lite Beer",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0003410057306",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0003410057306",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0003410057306",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0003410057306",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0003410057306",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0003410057306",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0003410057306",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0003410057306",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "miller-brewing-co-lite-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0003410057306",
+            "slug": "miller-brewing-co-lite-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0003410057306",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 4,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Budweiser",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 cans / 12 fl oz",
+            "description": "Bud Light",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820053047",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820053047",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820053047",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820053047",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820053047",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820053047",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820053047",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820053047",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820053047",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820053047",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820053047",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820053047",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820053047",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820053047",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820053047",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820053047",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820053047",
+                    "perspective": "left",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820053047",
+            "slug": "bud-light",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820053047",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 5,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bay Bridge",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "750 mL",
+            "description": "Bay Bridge Chardonnay",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008312084207",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008312084207",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008312084207",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bay-bridge-chardonnay",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Ambient",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008312084207",
+            "slug": "bay-bridge-chardonnay",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008312084207",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 6,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bud Light",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "25 fl oz",
+            "description": "Bud Light Can",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820025001",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/right/0001820025001",
+                    "perspective": "right",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820025001",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/left/0001820025001",
+                    "perspective": "left",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820025001",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820025001",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820025001",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820025001",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820025001",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820025001",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820025001",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820025001",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820025001",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820025001",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820025001",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820025001",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820025001",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820025001",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820025001",
+                    "perspective": "right",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light-can",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820025001",
+            "slug": "bud-light-can",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820025001",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 7,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Foster's",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "25 fl oz",
+            "description": "Fosters Lager Beer",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0007089701331",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0007089701331",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0007089701331",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0007089701331",
+                    "perspective": "front",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "fosters-lager-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0007089701331",
+            "slug": "fosters-lager-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0007089701331",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 8,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "White Claw",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 ct / 12 fl oz",
+            "description": "White Claw Hard Seltzer Variety Pack",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0063598554890",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0063598554890",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0063598554890",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0063598554890",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0063598554890",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0063598554890",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0063598554890",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0063598554890",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0063598554890",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/left/0063598554890",
+                    "perspective": "left",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0063598554890",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0063598554890",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0063598554890",
+                    "perspective": "right",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "white-claw-hard-seltzer-variety-pack",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0063598554890",
+            "slug": "white-claw-hard-seltzer-variety-pack",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0063598554890",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 9,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Modelo",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 bottles / 12 fl oz",
+            "description": "Modelo Especial Beer",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0008066095757",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008066095757",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0008066095757",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0008066095757",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0008066095757",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/top/0008066095757",
+                    "perspective": "top",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0008066095757",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008066095757",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0008066095757",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/top/0008066095757",
+                    "perspective": "top",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0008066095757",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/right/0008066095757",
+                    "perspective": "right",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008066095757",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/top/0008066095757",
+                    "perspective": "top",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/top/0008066095757",
+                    "perspective": "top",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/top/0008066095757",
+                    "perspective": "top",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0008066095757",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/left/0008066095757",
+                    "perspective": "left",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008066095757",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0008066095757",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0008066095757",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0008066095757",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0008066095757",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0008066095757",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0008066095757",
+                    "perspective": "front",
+                    "size": "xlarge"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "modelo-especial-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008066095757",
+            "slug": "modelo-especial-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008066095757",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 10,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bay Bridge",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "750 mL",
+            "description": "Bay Bridge Cabernet Sauvignon",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008312084187",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008312084187",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0008312084187",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0008312084187",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008312084187",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008312084187",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0008312084187",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0008312084187",
+                    "perspective": "left",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bay-bridge-cabernet-sauvignon",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Ambient",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008312084187",
+            "slug": "bay-bridge-cabernet-sauvignon",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008312084187",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 11,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Coors",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "30 cans / 12 fl oz",
+            "description": "Coors Light ",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0007199030030",
+                    "perspective": "front",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0007199030030",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0007199030030",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0007199030030",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/left/0007199030030",
+                    "perspective": "left",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0007199030030",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0007199030030",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0007199030030",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0007199030030",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0007199030030",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0007199030030",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0007199030030",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0007199030030",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0007199030030",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0007199030030",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/right/0007199030030",
+                    "perspective": "right",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0007199030030",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0007199030030",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0007199030030",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0007199030030",
+                    "perspective": "front",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "coors-light",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0007199030030",
+            "slug": "coors-light",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0007199030030",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 12,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Anheuser-Busch",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "16 fl oz",
+            "description": "Bud Light Reclosable Aluminum Bottles",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820000795",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820000795",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820000795",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820000795",
+                    "perspective": "front",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light-reclosable-aluminum-bottles",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820000795",
+            "slug": "bud-light-reclosable-aluminum-bottles",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820000795",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 13,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bay Bridge",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "750 mL",
+            "description": "Bay Bridge Pinot Grigio",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0008312000282",
+                    "perspective": "front",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008312000282",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008312000282",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008312000282",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008312000282",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bay-bridge-pinot-grigio",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Ambient",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008312000282",
+            "slug": "bay-bridge-pinot-grigio",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008312000282",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 14,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Kendall-Jackson",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "750 mL",
+            "description": "Kendall-Jackson Chardonnay",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008158401310",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008158401310",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0008158401310",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0008158401310",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0008158401310",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0008158401310",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0008158401310",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008158401310",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008158401310",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0008158401310",
+                    "perspective": "front",
+                    "size": "xlarge"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "kendall-jackson-chardonnay",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Ambient",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008158401310",
+            "slug": "kendall-jackson-chardonnay",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008158401310",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 15,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Michelob",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "24 cans / 12 fl oz",
+            "description": "Michelob Ultra",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820096715",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820096715",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820096715",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820096715",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820096715",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820096715",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820096715",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820096715",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820096715",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820096715",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820096715",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820096715",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820096715",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820096715",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820096715",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820096715",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/left/0001820096715",
+                    "perspective": "left",
+                    "size": "xlarge"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "michelob-ultra",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820096715",
+            "slug": "michelob-ultra",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820096715",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 16,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Coors",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "24 ct / 12 fl oz",
+            "description": "Coors Light Beer",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0007199031600",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0007199031600",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0007199031600",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0007199031600",
+                    "perspective": "front",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "coors-light-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0007199031600",
+            "slug": "coors-light-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0007199031600",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 17,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Heineken",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 bottles / 12 fl oz",
+            "description": "Heineken Lager Beer",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0007289000016",
+                    "perspective": "front",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0007289000016",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0007289000016",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0007289000016",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0007289000016",
+                    "perspective": "front",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "heineken-lager-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0007289000016",
+            "slug": "heineken-lager-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0007289000016",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 18,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Stella Artois",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 bottles / 11.2 fl oz",
+            "description": "Stella Artois Belgium Beer ",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0078615000014",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0078615000014",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0078615000014",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0078615000014",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0078615000014",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0078615000014",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0078615000014",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0078615000014",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0078615000014",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0078615000014",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0078615000014",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0078615000014",
+                    "perspective": "right",
+                    "size": "small"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "stella-artois-belgium-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0078615000014",
+            "slug": "stella-artois-belgium-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0078615000014",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 19,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Miller Brewing Co.",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 ct  / 12 fl oz",
+            "description": "Miller Brewing Co. Lite Beer",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0003410057636",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/front/0003410057636",
+                    "perspective": "front",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0003410057636",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0003410057636",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0003410057636",
+                    "perspective": "front",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "miller-brewing-co-lite-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0003410057636",
+            "slug": "miller-brewing-co-lite-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0003410057636",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 20,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bud Light",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 bottles / 12 fl oz",
+            "description": "Bud Light",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820000769",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820000769",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820000769",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820000769",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820000769",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820000769",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820000769",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820000769",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820000769",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820000769",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820000769",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820000769",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820000769",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820000769",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820000769",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820000769",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820000769",
+                    "perspective": "back",
+                    "size": "medium"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bud-light",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820000769",
+            "slug": "bud-light",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820000769",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 21,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Coors",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 ct / 12 fl oz",
+            "description": "Coors Light Beer",
+            "forceSize": "OverSize",
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0007199000048",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0007199000048",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0007199000048",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0007199000048",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "coors-light-beer",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0007199000048",
+            "slug": "coors-light-beer",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0007199000048",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 22,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Michelob",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "12 cans / 12 fl oz",
+            "description": "Michelob Ultra",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/right/0001820006991",
+                    "perspective": "right",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0001820006991",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/right/0001820006991",
+                    "perspective": "right",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/back/0001820006991",
+                    "perspective": "back",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0001820006991",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0001820006991",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/back/0001820006991",
+                    "perspective": "back",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0001820006991",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0001820006991",
+                    "perspective": "left",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/xlarge/back/0001820006991",
+                    "perspective": "back",
+                    "size": "xlarge"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0001820006991",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/right/0001820006991",
+                    "perspective": "right",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/right/0001820006991",
+                    "perspective": "right",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0001820006991",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/back/0001820006991",
+                    "perspective": "back",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/back/0001820006991",
+                    "perspective": "back",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0001820006991",
+                    "perspective": "left",
+                    "size": "large"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "michelob-ultra",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Refrigerated",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0001820006991",
+            "slug": "michelob-ultra",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0001820006991",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 23,
+            "curbsidePickupEligible": false
+        },
+        {
+            "brandName": "Bay Bridge",
+            "clickListItem": false,
+            "countryOfOrigin": null,
+            "customerFacingSize": "750 mL",
+            "description": "Bay Bridge Merlot",
+            "forceSize": null,
+            "homeDeliveryItem": false,
+            "images": [
+                {
+                    "url": "https://www.kroger.com/product/images/large/left/0008312084017",
+                    "perspective": "left",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/front/0008312084017",
+                    "perspective": "front",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/left/0008312084017",
+                    "perspective": "left",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/large/front/0008312084017",
+                    "perspective": "front",
+                    "size": "large"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/thumbnail/front/0008312084017",
+                    "perspective": "front",
+                    "size": "thumbnail"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/front/0008312084017",
+                    "perspective": "front",
+                    "size": "small"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/medium/left/0008312084017",
+                    "perspective": "left",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://www.kroger.com/product/images/small/left/0008312084017",
+                    "perspective": "left",
+                    "size": "small"
+                }
+            ],
+            "mainImagePerspective": "front",
+            "multipackItem": false,
+            "multipackQuantity": "0",
+            "options": [],
+            "romanceDescription": null,
+            "seoDescription": "bay-bridge-merlot",
+            "serviceCounter": null,
+            "shipToHomeItem": false,
+            "soldInStore": false,
+            "temperatureIndicator": "Ambient",
+            "verified": true,
+            "mainImage": "https://www.kroger.com/product/images/medium/front/0008312084017",
+            "slug": "bay-bridge-merlot",
+            "categories": [
+                {
+                    "name": "Adult Beverage",
+                    "code": "1",
+                    "categoryCode": "1",
+                    "categoryName": "Adult Beverage",
+                    "category": "Adult Beverage"
+                }
+            ],
+            "calculatedPromoPrice": null,
+            "calculatedRegularPrice": null,
+            "calculatedReferencePrice": null,
+            "displayTemplate": null,
+            "division": null,
+            "minimumAdvertisedPrice": null,
+            "orderBy": null,
+            "regularNFor": null,
+            "referenceNFor": null,
+            "referencePrice": null,
+            "store": null,
+            "endDate": null,
+            "priceNormal": null,
+            "priceSale": null,
+            "promoDescription": null,
+            "promoType": null,
+            "soldBy": null,
+            "promoNfor": null,
+            "complementProductIds": null,
+            "upc": "0008312084017",
+            "couponId": null,
+            "offers": [],
+            "couponIds": [],
+            "monetizationInfo": null,
+            "hasPrice": false,
+            "loyalMember": false,
+            "primaryIndex": 24,
+            "curbsidePickupEligible": false
+        }
+    ],
+    "coupons": {},
+    "departments": [],
+    "priceHasError": false,
+    "totalCount": 24
+}
