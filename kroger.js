@@ -2,7 +2,16 @@ const chrome = require('chrome-cookies-secure');
 const request = require('request-promise');
 const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08&monet=true';
 const upcUrl = 'https://www.kroger.com/products/api/products/details';
-const cookie = 'ak_bmsc=4F1014A87C94F2382797AAC2645FF53FB83397441E5D0000745DA25B6EA7303A~plhzzsfox6fyE2APR7vccQU683At1bzBK0ZBZxYYQnJJ4yOi9WJvvCQ8w2RDml7GzBANUkKZ3hPAu4zUGaq0lPD5sWhTgQaaWopdcLA3Hk5833joIVAKt0kZJ2eYdiKStaAbFc9adJWxUw/hiyQg2B9FGlz1DL2jO/4PIXVITfheOvCBeOxrmxtlXFyfYxz4klTC0o00AxQpoH0REGMJ/ZSV35tBxlDI5PX0HmbxlBxOM=;';
+const cookie = 'ak_bmsc=7FCBC708FDF952D5BBFB1F037EEA0C0948F6F720FC3A000084A6A95B5794426E~pl32wXGVOevq6EZkfu9iTXFHVJ21vEEK4kEdzLR0JU/CC4LR4BSBOrxpuUNk/57VTPwiMsP9XWH5y2Py+0+Q3TcckwKH9B02G3faDSyr0RiZGNJxOlc6/7EZAsZPgYcblOgFPIPVHqYOCq3yuiXOcrgsUDWKxX78Z0xZr5BS/cX48rEbehLuUBxdsg8L30hkcy0gKTllRLk1428hcBY3wJTTlGWPOL4yZpOOZl5P1tfSc=;';
+let options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Cookie': cookie
+    },
+    json: true,
+    timeout: 20000
+  }
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 // used if you need to dynamically get cookie header
 // ak_bmsc is cookie that you need
@@ -16,15 +25,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 (async () => {
   let upcs = [];
   let results;
-  let options = {
-    method: 'POST',
-    headers: {
-      'Cookie': cookie
-    },
-    uri: krogerUrl.replace('<start>', 0),
-    json: true,
-    timeout: 20000
-  }
+  options.uri = krogerUrl.replace('<start>', 0);
   try {
     results = await request(options);
   } catch(e) {
@@ -35,22 +36,13 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   upcs=upcs.concat(results.upcs);
   console.log(upcs);
 
-  let options2 = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Cookie': cookie
-    },
-    body: { 
-      upcs: upcs,
-      filterBadProducts: true 
-    },
-    uri: upcUrl,
-    json: true,
-    timeout: 20000
-  }
+  options.uri = upcUrl;
+  options.body = { 
+    upcs: upcs,
+    filterBadProducts: true 
+  };
   try {
-    results = await request(options2);
+    results = await request(options);
     console.log(results);
   } catch (e) {
     console.log(e);
