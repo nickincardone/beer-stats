@@ -7,7 +7,9 @@ let options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Cookie': cookie
+      'Cookie': cookie,
+      'division-id': '035',
+      'store-id': '00917' //need to find division and store with beer prices
     },
     json: true,
     timeout: 20000
@@ -20,10 +22,26 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 //     data.headers.Cookie = cookies;
 // });
 
+async function getUpcs(startIndex) {
+  options.uri = krogerUrl.replace('<start>', startIndex);
+  let results = await request(options);
+  return results.upcs;
+}
+
+function createBeerObject(product) {
+  return {
+    brand: product.brandName,
+    description: product.description,
+    size: product.customerFacingSize,
+    currentPrice: product.calculatedPromoPrice,
+    regularPrice: product.calculatedRegularPrice
+  }
+}
 
 
 (async () => {
   let upcs = [];
+  let totalCount = 0;
   let results;
   options.uri = krogerUrl.replace('<start>', 0);
   try {
@@ -34,7 +52,12 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   }
   
   upcs=upcs.concat(results.upcs);
-  console.log(upcs);
+  totalCount=results.productsInfo.totalCount;
+
+  // for use when you are ready to iterate over everything
+  // for (let i = 49; i < totalCount; i += 48) {
+  //   upcs=upcs.concat(getUpcs(i));
+  // }
 
   options.uri = upcUrl;
   options.body = { 
@@ -43,8 +66,11 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   };
   try {
     results = await request(options);
-    console.log(results);
   } catch (e) {
     console.log(e);
+  }
+
+  for (let i = 0; i < results.products.length; i++) {
+    console.log(createBeerObject(results.products[i]));
   }
 })();
