@@ -11,13 +11,17 @@ class BeerRepository {
         size TEXT,
         upc TEXT PRIMARY KEY,
         currentPrice REAL,
-        regularPrice REAL)`;
+        regularPrice REAL,
+        abv REAL,
+        rating REAL,
+        brewery TEXT,
+        style TEXT)`;
     return this.dao.run(sql)
   }
 
   create(brand, description, size, upc, currentPrice, regularPrice) {
     return this.dao.run(
-      'INSERT INTO beers (brand, description, size, upc, currentPrice, regularPrice) VALUES (?, ?, ?, ?, ?, ?)',
+      'INSERT INTO beers VALUES (?, ?, ?, ?, ?, ?, null, null, null, null)',
       [brand, description, size, upc, currentPrice, regularPrice])
   }
 }
