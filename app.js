@@ -11,7 +11,7 @@ async function main() {
     let upcs = await Kroger.getUpcs(i);
     let beerInfoList = await Kroger.getUpcsInfo(upcs);
     for (beer of beerInfoList) {
-      await beerRepo.create(beer.brand, beer.description, beer.size, beer.upc, beer.currentPrice, beer.regularPrice);
+      await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice, beer.regularPrice);
     }
   }
 }
