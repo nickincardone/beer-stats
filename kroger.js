@@ -1,6 +1,6 @@
 const chrome = require('chrome-cookies-secure');
 const request = require('request-promise');
-const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true';
+const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true'; //08145 craft 08119 beer
 const upcUrl = 'https://www.kroger.com/products/api/products/details';
 const cookie = 'ak_bmsc=7BD1B2AE93A8770E53589C76D372234748F6F70825630000E161AE5B54F20B1A~plkQjeOysouiVFQ9ZSoY9Cx9Q+xJwz1NL31fWHdmzg2xurcD77O7pkWJv0JubIsQ93VEC6ZX/pFCJnNNygSLK2SJEhKcOmHktZuYWiyAnAIR5MqAf40wERyHcs21qhh+zCAcK9m4Klgah+MRu6E2NCr4891kP9LABRU0xAggxwshS9oNVBtKN686AtN/lnZfIdZGtwXnUkXNa6LbUXUawPN02E/Hto2ZdNw2frxSEsT2Y=;';
 let options = {

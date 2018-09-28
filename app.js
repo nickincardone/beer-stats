@@ -21,6 +21,7 @@ async function main() {
         baInfo = await BeerAdvocate.getBeer(beer.description);
         beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);
       } catch (E) {
+        console.log("Problem with beer,:" + beer.description);
         console.log(E);
       }
     }
