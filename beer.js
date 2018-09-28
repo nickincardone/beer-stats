@@ -17,7 +17,7 @@ function getBeer(beerName, cb) {
   let beerInfo = {};
   request(options)
     .then(function ($) {
-        let beerPath = $('#ba-content ul li').children('a').first().attr('href');
+        let beerPath = $('#ba-content div div').children('a').first().attr('href');
         let url = baBase + beerPath;
         let options = {
           uri: url,
@@ -57,8 +57,8 @@ function getABV($, html) {
 }
 
 function getStyle($, html) {
-  let index = html.indexOf('/beer/style/');
-  let subStr = html.slice(index, index+40);
+  let index = html.indexOf('/beer/styles/');
+  let subStr = html.slice(index, index+60);
   let matchArr = subStr.match(/<b>[a-zA-Z ]+?(?=<\/b>)/);
   //TODO add error handling
   return matchArr[0].replace('<b>', '');

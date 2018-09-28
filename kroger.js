@@ -1,8 +1,8 @@
 const chrome = require('chrome-cookies-secure');
 const request = require('request-promise');
-const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08&monet=true';
+const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true';
 const upcUrl = 'https://www.kroger.com/products/api/products/details';
-const cookie = 'ak_bmsc=60BCEDA8101E209F2F5134257F2874B448F6F708256300004616AE5B5DA9E500~pl1jI/Sf0jF0dC1tVDM7jYrUpMfUCZ+u/bPPvFTz4BVh+3a68TKGZbDyl8ttX9OYPPk7l4rNV9DAmsKSVs5zvncGPDzXw71hlX0t0lKoBUIz1R94plODV0v8hPq/Zaf/FQCWalLiFIa+Fg2NdlAGvADCXUAreCQKbDpB6EElxMaC4nl/0wZTxhmROj6r0ppr5DT38LhKEaBGQRHuM3WIN1+PrpxTq4duy8HLgRbQ5aKpQ=;';
+const cookie = 'ak_bmsc=7BD1B2AE93A8770E53589C76D372234748F6F70825630000E161AE5B54F20B1A~plkQjeOysouiVFQ9ZSoY9Cx9Q+xJwz1NL31fWHdmzg2xurcD77O7pkWJv0JubIsQ93VEC6ZX/pFCJnNNygSLK2SJEhKcOmHktZuYWiyAnAIR5MqAf40wERyHcs21qhh+zCAcK9m4Klgah+MRu6E2NCr4891kP9LABRU0xAggxwshS9oNVBtKN686AtN/lnZfIdZGtwXnUkXNa6LbUXUawPN02E/Hto2ZdNw2frxSEsT2Y=;';
 let options = {
   method: 'POST',
   headers: {
