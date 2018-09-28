@@ -23,10 +23,10 @@ function translateSize(sizeDescription) {
 }
 
 function convertUnit(measure) {
-  if (measure.includes('fl oz')) {
+  if (measure.toLowerCase().includes('fl oz')) {
     return parseFloat(measure) * 29.5735;
   }
-  if (measure.includes('mL')) {
+  if (measure.toLowerCase().includes('ml')) {
     return parseFloat(measure);
   }
   console.log('Measure not accounted for: ' + measure);

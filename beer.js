@@ -5,7 +5,7 @@ var baBase = "http://www.beeradvocate.com";
 var searchPath = "/search/?q=<searchTerm>&qt=beer";
 
 
-function getBeer(beerName, cb) {
+async function getBeer(beerName) {
   let url = baBase + searchPath.replace('<searchTerm>', formatBeerName(beerName));
   let options = {
     uri: url,
@@ -15,37 +15,54 @@ function getBeer(beerName, cb) {
     rejectUnauthorized: false 
   };
   let beerInfo = {};
-  request(options)
-    .then(function ($) {
-        let beerPath = $('#ba-content div div').children('a').first().attr('href');
-        let url = baBase + beerPath;
-        let options = {
-          uri: url,
-          transform: function (body) {
-              return cheerio.load(body);
-          },
-          rejectUnauthorized: false 
-        };
-        beerInfo = transformBeerInfo(beerPath);
-        return request(options);
-    })
-    .then(function($) {
-      beerInfo.rating = parseFloat($('.ba-ravg').text());
-      let beerBreweryName = $('.titleBar h1').text();
-      beerInfo.beerName = getBeerName(beerBreweryName);
-      beerInfo.brewery = getBreweryName(beerBreweryName);
-      let infoBox = $('#info_box').html();
-      beerInfo.ABV = getABV($, infoBox);
-      beerInfo.style = getStyle($, infoBox);
-      console.log(beerInfo);
-    })
-    .catch(function (err) {
-        console.log(err);
-    });
+  $ = await request(options);
+  if ($('.ba-ravg').length !== 1) {
+    let beerPath = $('#ba-content div div').children('a').first().attr('href');
+    beerInfo = transformBeerInfo(beerPath);
+    let url = baBase + beerPath;
+    options.uri = url;
+    $ = await request(options);
+  }
+  beerInfo.rating = parseFloat($('.ba-ravg').text());
+  let beerBreweryName = $('.titleBar h1').text();
+  beerInfo.beerName = getBeerName(beerBreweryName);
+  beerInfo.brewery = getBreweryName(beerBreweryName);
+  let infoBox = $('#info_box').html();
+  beerInfo.ABV = getABV($, infoBox);
+  beerInfo.style = getStyle($, infoBox);
+  console.log(beerInfo);
+  return beerInfo;
 };
 
+function cleanBeerName(beerName) {
+  let cleanName = beerName.replace(' Belgium Beer', '');
+  cleanName = cleanName.replace('Dos Equis XX Especial Lager Beer', 'Dos Equis Special Lager');
+  cleanName = cleanName.replace('Dos Equis XX Especial Lager Beer', 'Dos Equis Amber Lager');
+  cleanName = cleanName.replace('Coors Beer', 'Coors Banquet');
+  cleanName = cleanName.replace('Bud Light Aluminum Bottle', 'Bud Light');
+  cleanName = cleanName.replace('Coors Light Aluminum Bottles', 'Coors Light');
+  cleanName = cleanName.replace('Miller Lite Aluminum Pints ', 'Miller Lite');
+  cleanName = cleanName.replace('Michelob Ultra Light Beer', 'Michelob Ultra');
+  cleanName = cleanName.replace('Coors Golden Banquet Beer', 'Coors Banquet');
+  cleanName = cleanName.replace('Tecate Cerveza Original Mexican Beer', 'Tecate');
+  cleanName = cleanName.replace('Small Town Brewery Not Your Fathers Rootbeer', 'Not Your Father\'s Root Beer');
+  cleanName = cleanName.replace('The Original Coors Beer', 'Coors Banquet');
+  cleanName = cleanName.replace('Bud Ice Lager', 'Bud Ice');
+  cleanName = cleanName.replace('Coronita', 'Corona');
+  cleanName = cleanName.replace('Budweiser Aluminum', 'Budweiser');
+  cleanName = cleanName.replace(' Imported Beer', '');
+  cleanName = cleanName.replace(' Beer', '');
+  cleanName = cleanName.replace(' Can', '');
+  cleanName = cleanName.replace('Miller Brewing Co.', 'Miller');
+  cleanName = cleanName.replace(' Seasonal Variety Pack', '');
+  cleanName = cleanName.replace(' Variety Pack', '');
+  return cleanName;
+}
+
 function formatBeerName(beerName) {
-  return beerName.replace(/ /g, '+');
+  let cleanName = cleanBeerName(beerName);
+  let formattedName = cleanName.replace(/ /g, '+');
+  return formattedName.replace(/'/g, '%27');
 }
 
 function getABV($, html) {
@@ -82,4 +99,4 @@ function transformBeerInfo(beerPath) {
   }
 }
 
-getBeer("Bud Light");
+module.exports.getBeer = getBeer;

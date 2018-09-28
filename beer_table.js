@@ -25,6 +25,12 @@ class BeerRepository {
       'INSERT INTO beers VALUES (?, ?, ?, ?, ?, ?, ?, null, null, null, null)',
       [brand, description, size, sizeMl, upc, currentPrice, regularPrice])
   }
+
+  update(upc, abv, rating, brewery, style) {
+    return this.dao.run(
+      'UPDATE beers set abv=?, rating=?, brewery=?, style=? where upc=?',
+      [abv, rating, brewery, style, upc])
+  }
 }
 
 module.exports = BeerRepository;
