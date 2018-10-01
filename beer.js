@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const request = require('request-promise');
+const translations = require('./translations.json');
 
 var baBase = "http://www.beeradvocate.com";
 var searchPath = "/search/?q=<searchTerm>&qt=beer";
@@ -35,44 +36,10 @@ async function getBeer(beerName) {
 };
 
 function cleanBeerName(beerName) {
-  let cleanName = beerName.replace(' Belgium Beer', '');
-  cleanName = cleanName.replace('Dos Equis XX Especial Lager Beer', 'Dos Equis Special Lager');
-  cleanName = cleanName.replace('Dos Equis XX Especial Lager Beer', 'Dos Equis Amber Lager');
-  cleanName = cleanName.replace('Coors Beer', 'Coors Banquet');
-  cleanName = cleanName.replace('Tecate Cerveza', 'Tecate');
-  cleanName = cleanName.replace('Lagunitas Hop Stoopid Ale', 'Hop Stoopid');
-  cleanName = cleanName.replace('Peroni Nastro Azzurro Bottles', 'Peroni Nastro Azzurro');
-  cleanName = cleanName.replace('Tecate Cerveza Light Beer', 'Tecate Light');
-  cleanName = cleanName.replace('The Original Coors Beer', 'Coors Banquet');
-  cleanName = cleanName.replace('Dos Equis XX Amber Beer', 'Dos Equis Amber Lager');
-  cleanName = cleanName.replace('Dos Equis XX Especial Lager ', 'Dos Equis Special Lager');
-  cleanName = cleanName.replace('Lagunitas 12th of Never Ale', '12th of Never Ale');
-  cleanName = cleanName.replace('Redbridge Lager', 'Redbridge');
-  cleanName = cleanName.replace('Omission Pale Ale', 'Omission');
-  cleanName = cleanName.replace('Lagunitas Seasonal Little Sumpin\' Wild Ale', 'Little Sumpin');
-  cleanName = cleanName.replace('Left Hand Brewing Co. Nitro Milk Stout', 'nitro milk stout');
-  cleanName = cleanName.replace('Small Town Brewery Citrus Mountain Ale', 'Not Your Father\'s Mountain Ale');
-  cleanName = cleanName.replace('Goose Island India Pale Ale', 'Goose IPA');
-  cleanName = cleanName.replace('Blue Moon Belgian White Ale', 'Blue Moon Belgian White');
-  cleanName = cleanName.replace('Blue Moon Belgian Style Wheat Ale', 'Blue Moon Wheat');
-  cleanName = cleanName.replace('Blue Moon White Mango Wheat Beer', 'Blue Moon Mango');
-  cleanName = cleanName.replace('Bud Light Aluminum Bottle', 'Bud Light');
-  cleanName = cleanName.replace('Coors Light Aluminum Bottles', 'Coors Light');
-  cleanName = cleanName.replace('Miller Lite Aluminum Pints ', 'Miller Lite');
-  cleanName = cleanName.replace('Michelob Ultra Light Beer', 'Michelob Ultra');
-  cleanName = cleanName.replace('Coors Golden Banquet Beer', 'Coors Banquet');
-  cleanName = cleanName.replace('Tecate Cerveza Original Mexican Beer', 'Tecate');
-  cleanName = cleanName.replace('Small Town Brewery Not Your Fathers Rootbeer', 'Not Your Father\'s Root Beer');
-  cleanName = cleanName.replace('The Original Coors Beer', 'Coors Banquet');
-  cleanName = cleanName.replace('Bud Ice Lager', 'Bud Ice');
-  cleanName = cleanName.replace('Coronita', 'Corona');
-  cleanName = cleanName.replace('Budweiser Aluminum', 'Budweiser');
-  cleanName = cleanName.replace(' Imported Beer', '');
-  cleanName = cleanName.replace(' Beer', '');
-  cleanName = cleanName.replace(' Can', '');
-  cleanName = cleanName.replace('Miller Brewing Co.', 'Miller');
-  cleanName = cleanName.replace(' Seasonal Variety Pack', '');
-  cleanName = cleanName.replace(' Variety Pack', '');
+  let cleanName = beerName;
+  for (translation of translations) {
+    cleanName.replace(translation[0], translation[1]);
+  }
   return cleanName;
 }
 
