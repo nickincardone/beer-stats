@@ -2,7 +2,7 @@ const chrome = require('chrome-cookies-secure');
 const request = require('request-promise');
 const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true'; //08145 craft 08119 beer
 const upcUrl = 'https://www.kroger.com/products/api/products/details';
-const cookie = 'ak_bmsc=7BD1B2AE93A8770E53589C76D372234748F6F70825630000E161AE5B54F20B1A~plkQjeOysouiVFQ9ZSoY9Cx9Q+xJwz1NL31fWHdmzg2xurcD77O7pkWJv0JubIsQ93VEC6ZX/pFCJnNNygSLK2SJEhKcOmHktZuYWiyAnAIR5MqAf40wERyHcs21qhh+zCAcK9m4Klgah+MRu6E2NCr4891kP9LABRU0xAggxwshS9oNVBtKN686AtN/lnZfIdZGtwXnUkXNa6LbUXUawPN02E/Hto2ZdNw2frxSEsT2Y=;';
+const cookie = 'ak_bmsc=95AABA960D6CCF425808FD14BCE0423B48F6F720783800000AEEB35B11670207~plGlEV8E9zEUsf/HHaS3E7DXqHKLJHMEy+MWoyXk/RGH8RGrWGiI3vobJgL2sGGC5vnh+ukOFq4W61e6D0IuGVZ2WV2RGdLEwZhLcpjrTtiqjvV+rwG3qDGqIjFqoEdzevwBX6/5iJcASD+hZ8jK9C6Dis7wt8y5eYWlZEpKdipx7De/LBTcCuFA9gVA9Q1JyeuCJWX5mQZYfUpEN6Qul+jpwW0eK2jB7SgW0AvYdnuWc=;';
 let options = {
   method: 'POST',
   headers: {
