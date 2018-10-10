@@ -38,7 +38,7 @@ async function getBeer(beerName) {
 function cleanBeerName(beerName) {
   let cleanName = beerName;
   for (translation of translations) {
-    cleanName.replace(translation[0], translation[1]);
+    cleanName = cleanName.replace(translation[0], translation[1]);
   }
   return cleanName;
 }

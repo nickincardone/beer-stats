@@ -14,7 +14,7 @@ class AdvocateBeerRepository {
 
   create(advocateId, krogerName, advocateName) {
     return this.dao.run(
-      'INSERT INTO beers VALUES (?, ?, ?)',
+      'INSERT INTO advocate_beers VALUES (?, ?, ?)',
       [advocateId, krogerName, advocateName])
   }
 

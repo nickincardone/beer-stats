@@ -22,9 +22,9 @@ async function main() {
       }
       try {
         baInfo = await BeerAdvocate.getBeer(beer.description);
-        beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);
+        await beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);
         try {
-          advocateBeerRepo.create(baInfo.beerId, beer.description, baInfo.beerName);
+          await advocateBeerRepo.create(baInfo.beerId, beer.description, baInfo.beerName);
         } catch (err) {
           console.log("Problem with beer:" + beer.description);
           console.log(err)
