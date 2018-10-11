@@ -17,17 +17,20 @@ async function main() {
     for (beer of beerInfoList) {
       try {
         await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice, beer.regularPrice);
-      } catch(err) {
-        //console.log(err);
+      } catch(e) {
+        if (e.code !== "SQLITE_CONSTRAINT") throw e;
       }
       try {
         baInfo = await BeerAdvocate.getBeer(beer.description);
         await beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);
         try {
+          //TODO move this ahead of update if description is same don't call beer advocate
           await advocateBeerRepo.create(baInfo.beerId, beer.description, baInfo.beerName);
-        } catch (err) {
-          console.log("Problem with beer:" + beer.description);
-          console.log(err)
+        } catch (e) {
+            if (e.code !== "SQLITE_CONSTRAINT") {
+              console.log("Problem with beer:" + beer.description);
+              console.log(err)
+            }
         }
       } catch (err) {
         console.log("Problem with beer:" + beer.description);

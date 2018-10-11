@@ -19,18 +19,22 @@ async function getBeer(beerName) {
   $ = await request(options);
   if ($('.ba-ravg').length !== 1) {
     let beerPath = $('#ba-content div div').children('a').first().attr('href');
-    beerInfo = transformBeerInfo(beerPath);
+    try {
+        beerInfo = transformBeerInfo(beerPath);
+    } catch (e) {
+        console.log('Cannot Find Beer: ' + beerName + ' url: ' + options.uri);
+    }
     let url = baBase + beerPath;
     options.uri = url;
     $ = await request(options);
   }
-  beerInfo.rating = parseFloat($('.ba-ravg').text());
-  let beerBreweryName = $('.titleBar h1').text();
-  beerInfo.beerName = getBeerName(beerBreweryName);
-  beerInfo.brewery = getBreweryName(beerBreweryName);
-  let infoBox = $('#info_box').html();
-  beerInfo.ABV = getABV($, infoBox);
-  beerInfo.style = getStyle($, infoBox);
+    beerInfo.rating = parseFloat($('.ba-ravg').text());
+    let beerBreweryName = $('.titleBar h1').text();
+    beerInfo.beerName = getBeerName(beerBreweryName);
+    beerInfo.brewery = getBreweryName(beerBreweryName);
+    let infoBox = $('#info_box').html();
+    beerInfo.ABV = getABV($, infoBox);
+    beerInfo.style = getStyle($, infoBox);
   console.log(beerInfo);
   return beerInfo;
 };
@@ -59,9 +63,9 @@ function getABV($, html) {
 
 function getStyle($, html) {
   let index = html.indexOf('/beer/styles/');
-  let subStr = html.slice(index, index+60);
-  let matchArr = subStr.match(/<b>[a-zA-Z ]+?(?=<\/b>)/);
-  //TODO add error handling
+  let subStr = html.slice(index, index+80);
+  let matchArr = subStr.match(/<b>[a-zA-Z ()/]+?(?=<\/b>)/);
+  //if the style is exceptionally long this could throw
   return matchArr[0].replace('<b>', '');
 }
 
