@@ -11,7 +11,7 @@ async function main() {
   await beerRepo.createTable();
   await advocateBeerRepo.createTable();
   let totalCount = await Kroger.getTotalCount();
-  for (let i = 0; i < 48; i+=48) { // make second one length when ready
+  for (let i = 0; i < totalCount; i+=48) { // make second one length when ready
     let upcs = await Kroger.getUpcs(i);
     let beerInfoList = await Kroger.getUpcsInfo(upcs);
     for (beer of beerInfoList) {
@@ -22,6 +22,7 @@ async function main() {
       }
       try {
         baInfo = await BeerAdvocate.getBeer(beer.description);
+        if (baInfo == {}) continue;
         await beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);
         try {
           //TODO move this ahead of update if description is same don't call beer advocate

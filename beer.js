@@ -7,7 +7,8 @@ var searchPath = "/search/?q=<searchTerm>&qt=beer";
 
 
 async function getBeer(beerName) {
-  let url = baBase + searchPath.replace('<searchTerm>', formatBeerName(beerName));
+  let formattedBeerName = formatBeerName(beerName);
+  let url = baBase + searchPath.replace('<searchTerm>', formattedBeerName);
   let options = {
     uri: url,
     transform: function (body) {
@@ -23,18 +24,19 @@ async function getBeer(beerName) {
         beerInfo = transformBeerInfo(beerPath);
     } catch (e) {
         console.log('Cannot Find Beer: ' + beerName + ' url: ' + options.uri);
+        return {};
     }
     let url = baBase + beerPath;
     options.uri = url;
     $ = await request(options);
   }
-    beerInfo.rating = parseFloat($('.ba-ravg').text());
-    let beerBreweryName = $('.titleBar h1').text();
-    beerInfo.beerName = getBeerName(beerBreweryName);
-    beerInfo.brewery = getBreweryName(beerBreweryName);
-    let infoBox = $('#info_box').html();
-    beerInfo.ABV = getABV($, infoBox);
-    beerInfo.style = getStyle($, infoBox);
+  beerInfo.rating = parseFloat($('.ba-ravg').text());
+  let beerBreweryName = $('.titleBar h1').text();
+  beerInfo.beerName = getBeerName(beerBreweryName);
+  beerInfo.brewery = getBreweryName(beerBreweryName);
+  let infoBox = $('#info_box').html();
+  beerInfo.ABV = getABV($, infoBox);
+  beerInfo.style = getStyle($, infoBox);
   console.log(beerInfo);
   return beerInfo;
 };
