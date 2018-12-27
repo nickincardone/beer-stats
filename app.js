@@ -4,12 +4,20 @@ const AdvocateBeerRepository = require('./advocate_beer_table');
 const Kroger = require('./kroger');
 const BeerAdvocate = require('./beer');
 
-async function main() {  
+async function main() { 
+  const args = process.argv.slice(2);
   const dao = new AppDAO('./database.sqlite3');
   const beerRepo = new BeerRepository(dao);
   const advocateBeerRepo = new AdvocateBeerRepository(dao);
   await beerRepo.createTable();
   await advocateBeerRepo.createTable();
+  if (args.includes('retry')) {
+    //TODO
+    let incompleteBeerList = beerRepo.getIncompleteBeers();
+    for (incompleteBeer of incompleteBeerList) {
+      let baInfo = await BeerAdvocate.getBeer(beer.description);
+    }
+  }
   let totalCount = await Kroger.getTotalCount();
   for (let i = 0; i < totalCount; i+=48) { // make second one length when ready
     let upcs = await Kroger.getUpcs(i);
@@ -20,7 +28,7 @@ async function main() {
       } catch(e) {
         if (e.code !== "SQLITE_CONSTRAINT") throw e;
       }
-      try {
+      try { //TODO need to replicate incomplete loop above with this
         baInfo = await BeerAdvocate.getBeer(beer.description);
         if (baInfo == {}) continue;
         await beerRepo.update(beer.upc, baInfo.ABV, baInfo.rating, baInfo.brewery, baInfo.style);

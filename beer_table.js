@@ -31,6 +31,11 @@ class BeerRepository {
       'UPDATE beers set abv=?, rating=?, brewery=?, style=? where upc=?',
       [abv, rating, brewery, style, upc])
   }
+
+  getIncompleteBeers() {
+    return this.dao.run(
+      'select description from beers where abv is null')
+  }
 }
 
 module.exports = BeerRepository;

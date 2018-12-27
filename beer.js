@@ -20,12 +20,8 @@ async function getBeer(beerName) {
   $ = await request(options);
   if ($('.ba-ravg').length !== 1) {
     let beerPath = $('#ba-content div div').children('a').first().attr('href');
-    try {
-        beerInfo = transformBeerInfo(beerPath);
-    } catch (e) {
-        console.log('Cannot Find Beer: ' + beerName + ' url: ' + options.uri);
-        return {};
-    }
+    beerInfo = transformBeerInfo(beerPath);
+    if (beerInfo == {}) return {};
     let url = baBase + beerPath;
     options.uri = url;
     $ = await request(options);
@@ -37,7 +33,6 @@ async function getBeer(beerName) {
   let infoBox = $('#info_box').html();
   beerInfo.ABV = getABV($, infoBox);
   beerInfo.style = getStyle($, infoBox);
-  console.log(beerInfo);
   return beerInfo;
 };
 
@@ -67,25 +62,30 @@ function getStyle($, html) {
   let index = html.indexOf('/beer/styles/');
   let subStr = html.slice(index, index+80);
   let matchArr = subStr.match(/<b>[a-zA-Z ()/]+?(?=<\/b>)/);
-  //if the style is exceptionally long this could throw
+  //if the style is exceptionally long this could throw, change 80 above
   return matchArr[0].replace('<b>', '');
 }
 
 function getBeerName(str) {
-    let temp = str.split('|');
-    return temp[0].trim();
+  let temp = str.split('|');
+  return temp[0].trim();
 }
 
 function getBreweryName(str) {
-    let temp = str.split('|');
-    return temp[1].trim();
+  let temp = str.split('|');
+  return temp[1].trim();
 }
 
 function transformBeerInfo(beerPath) {
-  let attrs = beerPath.split('/');
-  return {
-    'breweryId': parseInt(attrs[3]),
-    'beerId': parseInt(attrs[4])
+  try {
+    let attrs = beerPath.split('/');
+    return {
+      'breweryId': parseInt(attrs[3]),
+      'beerId': parseInt(attrs[4])
+    }
+  } catch (e) {
+    console.log('Cannot Find Beer: ' + beerName + ' url: ' + options.uri);
+    return {};
   }
 }
 
