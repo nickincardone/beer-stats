@@ -1,35 +1,35 @@
-const chrome = require('chrome-cookies-secure');
-const request = require('request-promise');
-const krogerUrl = 'https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true'; //08145 craft 08119 beer
-const upcUrl = 'https://www.kroger.com/products/api/products/details';
-const cookie = 'ak_bmsc=2AA8E3839CF0677B3AA1DCABAC3BEBA8B81C7F46F9760000D8E5E05B8393B12B~plM/+YIpWlcSQCkqUkQClu501ekegLlGwF1DFaBkKdlqrytnqjll/it2D7SyflHlrIYtJ35+/jZRoDq3XjB89lH6JeUh3aJFbqGQ4lPXmRzHl8qt9Clt40hxnLaC7QK6sfIiGHbhAUnfQEWOnsycPtePObkIeS4mtNWh78NKB3s5RCeGrp5RX22G3cuyVmWdz/OgzxHzwD/22sv6vcgdZiBjqSBcBLmxRz+zPrcN0F+ZE=;';
+const chrome = require("chrome-cookies-secure");
+const request = require("request-promise");
+const krogerUrl = "https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true"; //08145 craft 08119 beer
+const upcUrl = "https://www.kroger.com/products/api/products/details";
+const cookie = "ak_bmsc=92535232EFAA47F2897CEBC6B106582948F6F720FD2F00005A2E245C7BFA8B77~plDQWfhXMcA+xEgX0mmxAVZX5DC9iuMMFh+4hnfMFEMzK1AOzqmyL8eMW9jD/var2JTYKmHMno3DbI50QcoKz/W6rBgjBzQtPnRFEK0rulMJ/zDxW7aKxcC0OHBpg//S2R5vm9dWx14aG3oPGMwJPHI7gxbwGt80ob3NtIE0KN9VnVVW3l1tmuYHNXSZ8xumhabf3sjkXyekgkefB6+XPAeaIT1wZKIyQ0a7o+dd9qYI0=;";
 let options = {
-  method: 'POST',
+  method: "POST",
   headers: {
-    'Content-Type': 'application/json',
-    'Cookie': cookie,
-    'division-id': '035',
-    'store-id': '00917' //need to find division and store with beer prices
+    "Content-Type": "application/json",
+    "Cookie": cookie,
+    "division-id": "035",
+    "store-id": "00917" //need to find division and store with beer prices
   },
   json: true,
   timeout: 20000
-}
+};
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 function translateSize(sizeDescription) {
-  let stringSplit = sizeDescription.split('/');
+  let stringSplit = sizeDescription.split("/");
   if (stringSplit.length === 1) return convertUnit(sizeDescription);
   return parseInt(stringSplit[0]) * convertUnit(stringSplit[1]);
 }
 
 function convertUnit(measure) {
-  if (measure.toLowerCase().includes('fl oz')) {
+  if (measure.toLowerCase().includes("fl oz")) {
     return parseFloat(measure) * 29.5735;
   }
-  if (measure.toLowerCase().includes('ml')) {
+  if (measure.toLowerCase().includes("ml")) {
     return parseFloat(measure);
   }
-  console.log('Measure not accounted for: ' + measure);
+  console.log("Measure not accounted for: " + measure);
   return 0.0;
 }
 
@@ -42,26 +42,26 @@ function createBeerObject(product) {
     currentPrice: product.calculatedPromoPrice ? product.calculatedPromoPrice : product.calculatedRegularPrice,
     regularPrice: product.calculatedRegularPrice,
     upc: product.upc
-  }
+  };
 }
 
 async function getTotalCount() {
-  options.uri = krogerUrl.replace('<start>', 0);
+  options.uri = krogerUrl.replace("<start>", 0);
   let results = await request(options);
   return results.productsInfo.totalCount;
 }
 
 async function getUpcs(startIndex) {
-  options.uri = krogerUrl.replace('<start>', startIndex);
+  options.uri = krogerUrl.replace("<start>", startIndex);
   let results = await request(options);
   return results.upcs;
 }
 
 async function getUpcsInfo(upcs) {
   options.uri = upcUrl;
-  options.body = { 
+  options.body = {
     upcs: upcs,
-    filterBadProducts: true 
+    filterBadProducts: true
   };
   let results = await request(options);
   let beerInfoList = [];

@@ -1,12 +1,12 @@
-const AppDAO = require('./dao');
-const BeerRepository = require('./beer_table');
-const AdvocateBeerRepository = require('./advocate_beer_table');
-const Kroger = require('./kroger');
-const BeerAdvocate = require('./beer');
+const AppDAO = require("./dao");
+const BeerRepository = require("./beer_table");
+const AdvocateBeerRepository = require("./advocate_beer_table");
+const Kroger = require("./kroger");
+const BeerAdvocate = require("./beer");
 
-async function main() { 
+async function main() {
   const args = process.argv.slice(2);
-  const dao = new AppDAO('./database.sqlite3');
+  const dao = new AppDAO("./database.sqlite3");
   const beerRepo = new BeerRepository(dao);
   const advocateBeerRepo = new AdvocateBeerRepository(dao);
 
@@ -15,7 +15,7 @@ async function main() {
   await advocateBeerRepo.createTable();
 
   //With retry param we want to just try beers that have failed in the past to get info from BA
-  if (args.includes('retry')) {
+  if (args.includes("retry")) {
     //TODO
     let incompleteBeerList = await beerRepo.getIncompleteBeers();
     for (incompleteBeer of incompleteBeerList) {
@@ -28,13 +28,14 @@ async function main() {
 
   //Otherwise we just want to grab all the available beers
   let totalCount = await Kroger.getTotalCount();
-  for (let i = 0; i < totalCount; i+=48) {
+  for (let i = 0; i < totalCount; i += 48) {
     let upcs = await Kroger.getUpcs(i);
     let beerInfoList = await Kroger.getUpcsInfo(upcs);
     for (beer of beerInfoList) {
       try {
-        await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice, beer.regularPrice);
-      } catch(e) {
+        await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice,
+          beer.regularPrice);
+      } catch (e) {
         if (e.code !== "SQLITE_CONSTRAINT") throw e;
       }
       try { //TODO need to replicate incomplete loop above with this
@@ -45,10 +46,10 @@ async function main() {
           //TODO move this ahead of update if description is same don't call beer advocate
           await advocateBeerRepo.create(baInfo.beerId, beer.description, baInfo.beerName);
         } catch (e) {
-            if (e.code !== "SQLITE_CONSTRAINT") {
-              console.log("Problem with beer:" + beer.description);
-              console.log(err)
-            }
+          if (e.code !== "SQLITE_CONSTRAINT") {
+            console.log("Problem with beer:" + beer.description);
+            console.log(err);
+          }
         }
       } catch (err) {
         console.log("Problem with beer:" + beer.description);

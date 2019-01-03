@@ -1,26 +1,25 @@
-const cheerio = require('cheerio');
-const request = require('request-promise');
-const translations = require('./translations.json');
+const cheerio = require("cheerio");
+const request = require("request-promise");
+const translations = require("./translations.json");
 
 var baBase = "http://www.beeradvocate.com";
 var searchPath = "/search/?q=<searchTerm>&qt=beer";
 
-
 async function getBeer(beerName) {
   //TODO refactor by breaking out into sub functions
   let formattedBeerName = formatBeerName(beerName);
-  let url = baBase + searchPath.replace('<searchTerm>', formattedBeerName);
+  let url = baBase + searchPath.replace("<searchTerm>", formattedBeerName);
   let options = {
     uri: url,
     transform: function (body) {
-        return cheerio.load(body);
+      return cheerio.load(body);
     },
-    rejectUnauthorized: false 
+    rejectUnauthorized: false
   };
   let beerInfo = {};
   $ = await request(options);
-  if ($('.ba-ravg').length !== 1) {
-    let beerPath = $('#ba-content div div').children('a').first().attr('href');
+  if ($(".ba-ravg").length !== 1) {
+    let beerPath = $("#ba-content div div").children("a").first().attr("href");
     if (beerPath == undefined) {
       console.log("error getting beer: " + beerName);
       return {};
@@ -31,11 +30,11 @@ async function getBeer(beerName) {
     options.uri = url;
     $ = await request(options);
   }
-  beerInfo.rating = parseFloat($('.ba-ravg').text());
-  let beerBreweryName = $('.titleBar h1').text();
+  beerInfo.rating = parseFloat($(".ba-ravg").text());
+  let beerBreweryName = $(".titleBar h1").text();
   beerInfo.beerName = getBeerName(beerBreweryName);
   beerInfo.brewery = getBreweryName(beerBreweryName);
-  let infoBox = $('#info_box').html();
+  let infoBox = $("#info_box").html();
   beerInfo.ABV = getABV($, infoBox);
   beerInfo.style = getStyle($, infoBox);
   return beerInfo;
@@ -51,43 +50,43 @@ function cleanBeerName(beerName) {
 
 function formatBeerName(beerName) {
   let cleanName = cleanBeerName(beerName);
-  let formattedName = cleanName.replace(/ /g, '+');
-  return formattedName.replace(/'/g, '%27');
+  let formattedName = cleanName.replace(/ /g, "+");
+  return formattedName.replace(/'/g, "%27");
 }
 
 function getABV($, html) {
-  let index = html.indexOf('(ABV)');
-  let subStr = html.slice(index, index+20);
+  let index = html.indexOf("(ABV)");
+  let subStr = html.slice(index, index + 20);
   let matchArr = subStr.match(/[0-9]{1,2}.[0-9]+%/);
   //TODO add error handling
   return parseFloat(matchArr[0]);
 }
 
 function getStyle($, html) {
-  let index = html.indexOf('/beer/styles/');
-  let subStr = html.slice(index, index+80);
+  let index = html.indexOf("/beer/styles/");
+  let subStr = html.slice(index, index + 80);
   let matchArr = subStr.match(/<b>[a-zA-Z ()/]+?(?=<\/b>)/);
   //if the style is exceptionally long this could throw, change 80 above
-  return matchArr[0].replace('<b>', '');
+  return matchArr[0].replace("<b>", "");
 }
 
 function getBeerName(str) {
-  let temp = str.split('|');
+  let temp = str.split("|");
   return temp[0].trim();
 }
 
 function getBreweryName(str) {
-  let temp = str.split('|');
+  let temp = str.split("|");
   return temp[1].trim();
 }
 
 function transformBeerInfo(beerPath) {
   try {
-    let attrs = beerPath.split('/');
+    let attrs = beerPath.split("/");
     return {
-      'breweryId': parseInt(attrs[3]),
-      'beerId': parseInt(attrs[4])
-    }
+      "breweryId": parseInt(attrs[3]),
+      "beerId": parseInt(attrs[4])
+    };
   } catch (e) {
     return {};
   }

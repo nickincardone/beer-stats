@@ -1,6 +1,6 @@
-class AdvocateBeerRepository {  
+class AdvocateBeerRepository {
   constructor(dao) {
-    this.dao = dao
+    this.dao = dao;
   }
 
   createTable() {
@@ -9,19 +9,19 @@ class AdvocateBeerRepository {
         advocate_id REAL PRIMARY KEY,
         kroger_name TEXT,
         advocate_name TEXT)`;
-    return this.dao.run(sql)
+    return this.dao.run(sql);
   }
 
   create(advocateId, krogerName, advocateName) {
     return this.dao.run(
-      'INSERT INTO advocate_beers VALUES (?, ?, ?)',
-      [advocateId, krogerName, advocateName])
+      "INSERT INTO advocate_beers VALUES (?, ?, ?)",
+      [advocateId, krogerName, advocateName]);
   }
 
   get(advocateName) {
     return this.dao.run(
-      'select * from advocate_beers where advocate_name=?',
-      [advocateName])
+      "select * from advocate_beers where advocate_name=?",
+      [advocateName]);
   }
 }
 
