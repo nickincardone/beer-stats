@@ -9,17 +9,26 @@ async function main() {
   const dao = new AppDAO('./database.sqlite3');
   const beerRepo = new BeerRepository(dao);
   const advocateBeerRepo = new AdvocateBeerRepository(dao);
+
+  //Create Tables if they don't exist
   await beerRepo.createTable();
   await advocateBeerRepo.createTable();
+
+  //With retry param we want to just try beers that have failed in the past to get info from BA
   if (args.includes('retry')) {
     //TODO
-    let incompleteBeerList = beerRepo.getIncompleteBeers();
+    let incompleteBeerList = await beerRepo.getIncompleteBeers();
     for (incompleteBeer of incompleteBeerList) {
-      let baInfo = await BeerAdvocate.getBeer(beer.description);
+      let baInfo = await BeerAdvocate.getBeer(incompleteBeer.description);
+      if (baInfo == {}) continue;
+      console.log("good info on retry: " + incompleteBeer.description);
     }
+    return;
   }
+
+  //Otherwise we just want to grab all the available beers
   let totalCount = await Kroger.getTotalCount();
-  for (let i = 0; i < totalCount; i+=48) { // make second one length when ready
+  for (let i = 0; i < totalCount; i+=48) {
     let upcs = await Kroger.getUpcs(i);
     let beerInfoList = await Kroger.getUpcsInfo(upcs);
     for (beer of beerInfoList) {

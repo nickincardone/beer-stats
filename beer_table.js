@@ -33,8 +33,8 @@ class BeerRepository {
   }
 
   getIncompleteBeers() {
-    return this.dao.run(
-      'select description from beers where abv is null')
+    return this.dao.selectAll(
+      'select description, upc from beers where abv is null')
   }
 }
 

@@ -7,6 +7,7 @@ var searchPath = "/search/?q=<searchTerm>&qt=beer";
 
 
 async function getBeer(beerName) {
+  //TODO refactor by breaking out into sub functions
   let formattedBeerName = formatBeerName(beerName);
   let url = baBase + searchPath.replace('<searchTerm>', formattedBeerName);
   let options = {
@@ -20,6 +21,10 @@ async function getBeer(beerName) {
   $ = await request(options);
   if ($('.ba-ravg').length !== 1) {
     let beerPath = $('#ba-content div div').children('a').first().attr('href');
+    if (beerPath == undefined) {
+      console.log("error getting beer: " + beerName);
+      return {};
+    }
     beerInfo = transformBeerInfo(beerPath);
     if (beerInfo == {}) return {};
     let url = baBase + beerPath;
@@ -84,7 +89,6 @@ function transformBeerInfo(beerPath) {
       'beerId': parseInt(attrs[4])
     }
   } catch (e) {
-    console.log('Cannot Find Beer: ' + beerName + ' url: ' + options.uri);
     return {};
   }
 }
