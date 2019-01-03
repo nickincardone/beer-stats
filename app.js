@@ -20,7 +20,7 @@ async function main() {
     let incompleteBeerList = await beerRepo.getIncompleteBeers();
     for (incompleteBeer of incompleteBeerList) {
       let baInfo = await BeerAdvocate.getBeer(incompleteBeer.description);
-      if (baInfo == {}) continue;
+      if (baInfo.rating == undefined) continue;
       console.log("good info on retry: " + incompleteBeer.description);
     }
     return;

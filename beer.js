@@ -2,34 +2,48 @@ const cheerio = require("cheerio");
 const request = require("request-promise");
 const translations = require("./translations.json");
 
-var baBase = "http://www.beeradvocate.com";
-var searchPath = "/search/?q=<searchTerm>&qt=beer";
+const baBase = "http://www.beeradvocate.com";
+const searchPath = "/search/?q=<searchTerm>&qt=beer";
+let options = {
+  uri: '',
+  transform: function (body) {
+    return cheerio.load(body);
+  },
+  rejectUnauthorized: false
+};
 
 async function getBeer(beerName) {
   //TODO refactor by breaking out into sub functions
-  let formattedBeerName = formatBeerName(beerName);
-  let url = baBase + searchPath.replace("<searchTerm>", formattedBeerName);
-  let options = {
-    uri: url,
-    transform: function (body) {
-      return cheerio.load(body);
-    },
-    rejectUnauthorized: false
-  };
   let beerInfo = {};
-  $ = await request(options);
+  let formattedBeerName = formatBeerName(beerName);
+  options.uri = baBase + searchPath.replace("<searchTerm>", formattedBeerName);
+
+  let $ = await request(options);
+
+  if (hasNoResults($)) {
+    console.log("No results for beerName: " + beerName);
+  }
+
+  //If there only one result Beer advocate goes directly to that page
+  //This branch will go to the first page of the search results
   if ($(".ba-ravg").length !== 1) {
     let beerPath = $("#ba-content div div").children("a").first().attr("href");
+
     if (beerPath == undefined) {
-      console.log("error getting beer: " + beerName);
+      console.log("Error getting beer path for beer: " + beerName + " uri: " + options.uri);
       return {};
     }
+
     beerInfo = transformBeerInfo(beerPath);
-    if (beerInfo == {}) return {};
-    let url = baBase + beerPath;
-    options.uri = url;
+
+    if (beerInfo == {}) {
+      console.log("Error getting beer info for beer: " + beerName);
+      return {};
+    }
+    options.uri = baBase + beerPath;
     $ = await request(options);
   }
+
   beerInfo.rating = parseFloat($(".ba-ravg").text());
   let beerBreweryName = $(".titleBar h1").text();
   beerInfo.beerName = getBeerName(beerBreweryName);
@@ -39,6 +53,10 @@ async function getBeer(beerName) {
   beerInfo.style = getStyle($, infoBox);
   return beerInfo;
 };
+
+function hasNoResults($) {
+  $("li:contains('No results. Try being more specific.')").length == 1;
+}
 
 function cleanBeerName(beerName) {
   let cleanName = beerName;
