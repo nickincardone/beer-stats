@@ -13,37 +13,30 @@ let options = {
 };
 
 async function getBeer(beerName) {
-  //TODO refactor by breaking out into sub functions
-  let beerInfo = {};
   let formattedBeerName = formatBeerName(beerName);
   options.uri = baBase + searchPath.replace("<searchTerm>", formattedBeerName);
-
   let $ = await request(options);
 
   if (hasNoResults($)) {
     console.log("No results for beerName: " + beerName);
+    return {};
   }
 
   //If there only one result Beer advocate goes directly to that page
   //This branch will go to the first page of the search results
   if ($(".ba-ravg").length !== 1) {
-    let beerPath = $("#ba-content div div").children("a").first().attr("href");
-
-    if (beerPath == undefined) {
-      console.log("Error getting beer path for beer: " + beerName + " uri: " + options.uri);
+    $ = await getFirstResult($);
+    if ($ === null) {
+      console.log("Problem grabbing first result for beerName: " + beerName);
       return {};
     }
-
-    beerInfo = transformBeerInfo(beerPath);
-
-    if (beerInfo == {}) {
-      console.log("Error getting beer info for beer: " + beerName);
-      return {};
-    }
-    options.uri = baBase + beerPath;
-    $ = await request(options);
   }
 
+  return getBeerInfo($);
+};
+
+function getBeerInfo($) {
+  let beerInfo = {};
   beerInfo.rating = parseFloat($(".ba-ravg").text());
   let beerBreweryName = $(".titleBar h1").text();
   beerInfo.beerName = getBeerName(beerBreweryName);
@@ -52,7 +45,18 @@ async function getBeer(beerName) {
   beerInfo.ABV = getABV($, infoBox);
   beerInfo.style = getStyle($, infoBox);
   return beerInfo;
-};
+}
+
+async function getFirstResult($) {
+  let beerPath = $("#ba-content div div").children("a").first().attr("href");
+  if (beerPath === undefined) return null;
+
+  beerInfo = transformBeerInfo(beerPath);
+  if (beerInfo === null) return null;
+
+  options.uri = baBase + beerPath;
+  return await request(options);
+}
 
 function hasNoResults($) {
   $("li:contains('No results. Try being more specific.')").length == 1;
@@ -76,7 +80,6 @@ function getABV($, html) {
   let index = html.indexOf("(ABV)");
   let subStr = html.slice(index, index + 20);
   let matchArr = subStr.match(/[0-9]{1,2}.[0-9]+%/);
-  //TODO add error handling
   return parseFloat(matchArr[0]);
 }
 
@@ -106,7 +109,7 @@ function transformBeerInfo(beerPath) {
       "beerId": parseInt(attrs[4])
     };
   } catch (e) {
-    return {};
+    return null;
   }
 }
 

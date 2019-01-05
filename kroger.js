@@ -2,7 +2,7 @@ const chrome = require("chrome-cookies-secure");
 const request = require("request-promise");
 const krogerUrl = "https://www.kroger.com/search/api/searchAll?start=<start>&count=48&tab=0&taxonomyId=08119&monet=true"; //08145 craft 08119 beer
 const upcUrl = "https://www.kroger.com/products/api/products/details";
-const cookie = "ak_bmsc=92535232EFAA47F2897CEBC6B106582948F6F720FD2F00005A2E245C7BFA8B77~plDQWfhXMcA+xEgX0mmxAVZX5DC9iuMMFh+4hnfMFEMzK1AOzqmyL8eMW9jD/var2JTYKmHMno3DbI50QcoKz/W6rBgjBzQtPnRFEK0rulMJ/zDxW7aKxcC0OHBpg//S2R5vm9dWx14aG3oPGMwJPHI7gxbwGt80ob3NtIE0KN9VnVVW3l1tmuYHNXSZ8xumhabf3sjkXyekgkefB6+XPAeaIT1wZKIyQ0a7o+dd9qYI0=;";
+const cookie = "ak_bmsc=EBAA04D681F8F0B57801B44F67E1181948F6F720077A00007F15305C86AD8B0D~pl8kcpT+kJB+yzf2DAA6ZJs3p8lrl/FZa53Vmjnam3yLG+CGEwr67wdtNkNvFB1ujG8D3Ey9QjFqoe4qNzAtQfXTS5IhWmvphg4o+dWTDBnB7wR+Tqy8XbPE05IjklDIWw6s6aQsa86LB48KpD+aMyx2h2ThMQJcDtjQIxaNSANKCrhGUv9ELgE492xMRTmeZ062OY9IjS2JxclTnZugNPRuus6ekqRT++duVdEHslUrQ=;";
 let options = {
   method: "POST",
   headers: {
@@ -25,6 +25,12 @@ function translateSize(sizeDescription) {
 function convertUnit(measure) {
   if (measure.toLowerCase().includes("fl oz")) {
     return parseFloat(measure) * 29.5735;
+  }
+  if (measure.toLowerCase().includes("oz")) {
+    return parseFloat(measure) * 29.5735;
+  }
+  if (measure.toLowerCase().includes("pt")) {
+    return parseFloat(measure) * 568.261;
   }
   if (measure.toLowerCase().includes("ml")) {
     return parseFloat(measure);
