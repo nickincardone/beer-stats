@@ -1,10 +1,15 @@
 const AppDAO = require("./dao");
 const BeerRepository = require("./beer_table");
+const BeerLocationRepository = require("./beer_location_table");
 const AdvocateBeerRepository = require("./advocate_beer_table");
 const Kroger = require("./kroger");
 const BeerAdvocate = require("./beer");
 
+
+const locations = [["035", "00917"]];
+
 let beerRepo;
+let beerLocationRepo;
 let advocateBeerRepo;
 
 async function main() {
@@ -12,15 +17,19 @@ async function main() {
   const dao = new AppDAO("./database.sqlite3");
 
   beerRepo = new BeerRepository(dao);
+  beerLocationRepo = new BeerLocationRepository(dao);
   advocateBeerRepo = new AdvocateBeerRepository(dao);
 
   //Create Tables if they don't exist
   await beerRepo.createTable();
   await advocateBeerRepo.createTable();
+  await advocateBeerRepo.createTable();
 
   //With retry param we want to just try beers that have failed in the past to get info from BA
   if (args.includes("retry")) {
     await retryIncompleteBeers();
+  } else if (args.includes("locations")) {
+    await getBeersByLocation(locations);
   } else {
     await getBeers();
   }

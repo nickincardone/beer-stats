@@ -63,7 +63,31 @@ async function getUpcs(startIndex) {
   return results.upcs;
 }
 
+async function getUpcsByLocation(startIndex, location) {
+  options.headers["division-id"] = location[0];
+  options.headers["store-id"] = location[1];
+  options.uri = krogerUrl.replace("<start>", startIndex);
+  let results = await request(options);
+  return results.upcs;
+}
+
 async function getUpcsInfo(upcs) {
+  options.uri = upcUrl;
+  options.body = {
+    upcs: upcs,
+    filterBadProducts: true
+  };
+  let results = await request(options);
+  let beerInfoList = [];
+  for (let i = 0; i < results.products.length; i++) {
+    beerInfoList.push(createBeerObject(results.products[i]));
+  }
+  return beerInfoList;
+}
+
+async function getUpcsInfoByLocation(upcs, location) {
+  options.headers["division-id"] = location[0];
+  options.headers["store-id"] = location[1];
   options.uri = upcUrl;
   options.body = {
     upcs: upcs,
