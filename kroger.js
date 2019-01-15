@@ -104,3 +104,4 @@ async function getUpcsInfoByLocation(upcs, location) {
 module.exports.getTotalCount = getTotalCount;
 module.exports.getUpcs = getUpcs;
 module.exports.getUpcsInfo = getUpcsInfo;
+module.exports.options = options;

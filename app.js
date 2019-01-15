@@ -28,10 +28,8 @@ async function main() {
   //With retry param we want to just try beers that have failed in the past to get info from BA
   if (args.includes("retry")) {
     await retryIncompleteBeers();
-  } else if (args.includes("locations")) {
-    await getBeersByLocation(locations);
   } else {
-    await getBeers();
+    await getBeersByLocation();
   }
 }
 
@@ -45,23 +43,36 @@ async function retryIncompleteBeers() {
   }
 }
 
-async function getBeers() {
+async function getBeers(location) {
   let totalCount = await Kroger.getTotalCount();
   for (let i = 0; i < totalCount; i += 48) {
     let upcs = await Kroger.getUpcs(i);
     let beerInfoList = await Kroger.getUpcsInfo(upcs);
     for (beer of beerInfoList) {
-      await insertBeer(beer);
+      await insertBeer(beer, location);
       await getBeerAdvocateDetails(beer);
       console.log("Inserted beer: " + beer.description);
     }
   }
 }
 
-async function insertBeer(beer) {
+async function getBeersByLocation() {
+  for (location of this.locations) {
+    Kroger.options.headers["division-id"] = location[0];
+    Kroger.options.headers["store-id"] = location[1];
+    getBeers(location);
+  }
+}
+
+async function insertBeer(beer, location) {
   try {
     await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice,
       beer.regularPrice);
+  } catch (e) {
+    if (e.code !== "SQLITE_CONSTRAINT") throw e;
+  }
+  try {
+    await beerLocationRepo.create(beer.upc, parseInt(location[1]), beer.currentPrice, beer.regularPrice);
   } catch (e) {
     if (e.code !== "SQLITE_CONSTRAINT") throw e;
   }
