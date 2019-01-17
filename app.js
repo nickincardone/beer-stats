@@ -22,7 +22,7 @@ async function main() {
 
   //Create Tables if they don't exist
   await beerRepo.createTable();
-  await advocateBeerRepo.createTable();
+  await beerLocationRepo.createTable();
   await advocateBeerRepo.createTable();
 
   //With retry param we want to just try beers that have failed in the past to get info from BA
@@ -57,11 +57,11 @@ async function getBeers(location) {
 }
 
 async function getBeersByLocation() {
-  for (location of this.locations) {
+  locations.forEach(function(location) {
     Kroger.options.headers["division-id"] = location[0];
     Kroger.options.headers["store-id"] = location[1];
     getBeers(location);
-  }
+  });
 }
 
 async function insertBeer(beer, location) {

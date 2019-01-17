@@ -7,15 +7,16 @@ class BeerLocationRepository {
     const sql = `
       CREATE TABLE IF NOT EXISTS beer_location (
         upc TEXT,
-        locationId REAL,
+        locationId INTEGER,
         currentPrice REAL,
-        regularPrice REAL)`;
+        regularPrice REAL,
+        PRIMARY KEY (upc, locationId))`;
     return this.dao.run(sql);
   }
 
   create(upc, locationId, currentPrice, regularPrice) {
     return this.dao.run(
-      "INSERT INTO beers VALUES (?, ?, ?, ?)",
+      "INSERT INTO beer_location VALUES (?, ?, ?, ?)",
       [upc, locationId, currentPrice, regularPrice]);
   }
 }
