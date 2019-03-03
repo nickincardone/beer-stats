@@ -69,12 +69,12 @@ async function insertBeer(beer, location) {
     await beerRepo.create(beer.brand, beer.description, beer.size, beer.sizeMl, beer.upc, beer.currentPrice,
       beer.regularPrice);
   } catch (e) {
-    if (e.code !== "SQLITE_CONSTRAINT") throw e;
+    if (e.code !== "SQLITE_CONSTRAINT") throw e; //Just means duplicate
   }
   try {
     await beerLocationRepo.create(beer.upc, parseInt(location[1]), beer.currentPrice, beer.regularPrice);
   } catch (e) {
-    if (e.code !== "SQLITE_CONSTRAINT") throw e;
+    if (e.code !== "SQLITE_CONSTRAINT") throw e; //Just means duplicate
   }
 }
 
